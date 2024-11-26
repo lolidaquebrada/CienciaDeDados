@@ -1,7 +1,7 @@
 import { getCSS, tickConfig } from "./common.js"
 
 async function quantidadeEstudantes() {
-  const url = 'https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/educacao/educacao-etapas-de-ensino.json'
+  const url = 'https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/educacao/educacao-etapas-de-ensino.json '
   const res = await fetch(url)
   const dados = await res.json()
   const nomeDasRedes = Object.keys(dados)
@@ -28,7 +28,7 @@ async function quantidadeEstudantes() {
         family: getCSS('--font'),
         size: 30,
       }
-    }, 
+    },
     xaxis: {
       tickfont: tickConfig,
       title: {
@@ -37,7 +37,7 @@ async function quantidadeEstudantes() {
               color: getCSS('--secundary-color')
           }
       }
-  }, 
+  },
   yaxis: {
     tickfont: tickConfig,
     title: {
